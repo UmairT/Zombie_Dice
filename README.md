@@ -1,4 +1,4 @@
-# Zombie_Dice [CPSC 473 Project 3]
+# Zombie_Dice [CPSC 473 Project 2]
 
   Our plan for this project is to build an online version of the tabletop dice game ‘Zombie Dice’. In this game, 
 two players faceoff to be the first to consume a total of 13 brains. Logged in players take turns rolling virtual 
