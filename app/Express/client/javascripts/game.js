@@ -1,21 +1,33 @@
 var main = function () {
     "use strict";
 
-    //$("h3").text("Loading...");
+    $("div.dice1").text("Rolling...");
+    $("div.dice2").text("Rolling...");
+    $("div.dice3").text("Rolling...");
+
+    setInterval(function () {
+        $("div.dice1").html("<image src='images/brain_roll.jpg'>");
+        $("div.dice1_label").html("BRAIN");
+    }, 1000);
+    
+    setInterval(function () {
+        $("div.dice2").html("<image src='images/shotgun_roll.jpg'>");
+        $("div.dice2_label").html("SHOTGUN");
+    }, 2000);
+    
+    setInterval(function () {
+        $("div.dice3").html("<image src='images/foot_roll.jpg'>");
+        $("div.dice3_label").html("FEET");
+    }, 3000);
     
 };
 
 $(document).ready(main);
 
-function postURL () {
-    var name = document.getElementById("name").value;
-    name = name.replace("/","-slashie-");
-    //your code to be executed after 1 seconds
-     
-    var yourURL = function (myJson) {
-        var obj = JSON.parse(myJson)
-        
-        $("p").html("Your URL: <a href='http://" + obj.shortURL + "' target='_blank'>" + obj.shortURL + "</a>");
-    };
-    $.post("/" + name, yourURL, 'json');
+function roll () {
+    
+};
+
+function stop () {
+    
 };
