@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <html lang='en'>
+    <head>
+    <meta charset='utf-8'>
+    <title>Zombie Dice</title>
+    <link href="stylesheets/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <h1><center><image src='images/logo2.png'></image></center></h1>
+    <h2><center><a href='index.html'>Home</a> - <a href='scores.html'>High Scores</a> - <a href='login.html'>Login</a></center></h2>
+
+    <table><tr><td width="50%">
+        <div class="ScoresTable" >
+            <table >
+                <tr>
+                    <td>
+                        Player
+                    </td>
+                    <td >
+                        Score
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        Player 1
+                    </td>
+                    <td>
+                        0
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        Player 2
+                    </td>
+                    <td>
+                        0
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </td><td width="50%">
+        <center>
+        <form action="#" method="post" name="form_name" id="form_id" class="form_class" >
+            <input class="btn" type="button" name="roll_id" id="roll" value="Roll" onclick="roll()"/>
+            <input class="btn" type="button" name="stop_id" id="stop" value="Stop and Score" onclick="stop()"/>
+        </form>
+        <br>
+        </center>
+        <div class="DiceTable" >
+            <table >
+                <tr>
+                    <td>
+                        <image src='images/brain_roll.jpg'>
+                    </td>
+                    <td >
+                        <image src='images/shotgun_roll.jpg'>
+                    </td>
+                    <td >
+                        <image src='images/foot_roll.jpg'>
+                    </td>
+                </tr>
+                <tr>
+                    <td >
+                        BRAIN
+                    </td>
+                    <td>
+                        SHOTGUN
+                    </td>
+                    <td >
+                        FEET
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        Brains: 1
+                        <br>
+                        Shotguns: 1
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </td></tr></table>
+
+
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="javascripts/game.js"></script>
+    </body>
+    </html>
